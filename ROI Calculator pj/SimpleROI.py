@@ -1,6 +1,6 @@
 class ROI():
     '''
-    This is for when you know the exact Yearly income and expenses for your properties
+    This is for when you know the exact income and expenses for your properties
     
     '''
     def __init__(self, income, expense, investment):
