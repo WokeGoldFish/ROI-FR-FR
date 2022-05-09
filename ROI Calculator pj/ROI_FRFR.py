@@ -25,7 +25,7 @@ class CashOnCash():
 
     def totalIncome(self):
         total = sum(self.income.values())
-        print(f'Your monthly net income is ${total}')
+        
         return total
 
     def myIncome(self):
@@ -45,7 +45,8 @@ class CashOnCash():
                 
             choice = input('Add / Show / Remove or Quit')
             choice = choice.lower()
-        self.totalIncome()
+        total = self.totalIncome()
+        print(f'Your monthly net income is ${total}')
         return
 ## expenses
     def addExpenses(self):
@@ -69,7 +70,6 @@ class CashOnCash():
 
     def totalExpenses(self):
         total =  sum(self.expenses.values())
-        print(f'Your monthly net Expenses are ${total}')
         return total 
         
     def myExpenses(self):
@@ -89,7 +89,8 @@ class CashOnCash():
 
             choice = input('Add / Show / Remove or Quit:')
             choice = choice.lower()
-        self.totalExpenses()
+        total = self.totalExpenses()
+        print(f'Your monthly net Expenses are ${total}')
         return
 
 ## investment
@@ -115,7 +116,6 @@ class CashOnCash():
             
     def totalInvestment(self):
         total =  sum(self.investment.values())
-        print(f'Total investment is ${total}')
         return total
     
     def myInvestment(self):
@@ -135,7 +135,8 @@ class CashOnCash():
 
             choice = input('Add / Show / Remove or Quit:')
             choice = choice.lower()
-        self.totalInvestment()
+        total = self.totalInvestment()
+        print(f'Total investment is ${total}')
         return
     
     
